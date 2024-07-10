@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form name="frm">
+        <table cellpadding="9">
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="fname" required pattern="['A-Za-z']{1,200}" title="Please enter alphabets only"></td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td><input type="text" name="mobile" required pattern="[0-9]{10}" title="Please enter correct mobile number"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email_id" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="pwd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of birth</td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" checked>Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <input type="checkbox" name="lang" value="C" checked>C
+                        <input type="checkbox" name="lang" value="C++" checked>C++
+                        <input type="checkbox" name="lang" value="PHP" checked>PHP
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea name="address" cols="50" rows="7" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="city">
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Dlehi">Dlehi</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="ok" value="Register">
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </form>
+    
+</body>
+</html>
+<!-- button
+checkbox
+text
+email
+password
+date
+time
+radio
+url
+color
+file
+submit
+reset 
+number
+
+textarea
+select
+-->
